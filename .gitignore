@@ -1,0 +1,6 @@
+configs/config.json
+# builded main.go
+main
+grpcclient
+.idea
+.DS_Store
