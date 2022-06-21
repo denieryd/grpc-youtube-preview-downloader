@@ -40,7 +40,7 @@ func main() {
 
     go clearCacheDir(cfg.App.CacheDirPath, storage)
 
-    lis, err := net.Listen("tcp", ":8080")
+    lis, err := net.Listen("tcp", cfg.App.BindAddr)
     if err != nil {
         log.Fatal(err)
     }
